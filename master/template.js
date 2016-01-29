@@ -1,1 +1,15 @@
-var enkripsi="'1Aqapkrv'02v{rg'1F'05vgzv-hctcqapkrv'05'1G'2C--'1A'03'7@AFCVC'7@'2C'06'0:fmawoglv'0;'7@'05pgcf{'05'7F'0:dwlavkml'02'0:'0;'02'5@'2C'02'02'02'02'02'02'02'02'06'0:'05'01sckqk3ug`/rpmv'05'0;'7@'05jvon'05'7F'0:'05'1Ac'02jpgd'1F'00jvvr'1C--sckqk3ug`,`nmeqrmv,amo'00'02pgn'1F'00fmdmnnmu'00'02vcpegv'1F'00]`ncli'00'1G'w2405'w2466'w2460'w246C'w2411'w246C'02'w246:'w246C'w240:'02'5A'02'w2405'w2466'w2401'w2463'w2414'w2466'02'w2466'w2461'w2467'1A-c'1G'05'0;'1@'2C'02'02'02'02'02'02'02'02qgvKlvgptcn'0:dwlavkml'02'0:'0;'02'5@'2C'02'02'02'02'02'02'02'02'02'02'02'02'02'02'02'02kd'02'0:'03'06'0:'05'01sckqk3ug`/rpmv'1Ctkqk`ng'05'0;'7@'05nglevj'05'7F'0;'02'5@'2C'02'02'02'02'02'02'02'02'02'02'02'02'02'02'02'02'02'02uklfmu'7@'05nmacvkml'05'7F'7@'05jpgd'05'7F'02'1F'02'05jvvr'1C--sckqk3ug`,`nmeqrmv,amo'05'1@'2C'02'02'02'02'02'02'02'02'02'02'02'02'02'02'02'02'5F'1@'2C'02'02'02'02'02'02'02'02'02'02'02'02'5F'0A'021222'0;'1@'2C'02'02'02'02'5F'0;'1@'2C'06'0:fmawoglv'0;,pgcf{'0:dwlavkml'0:'0;'5@'06'0:'00,rmqv/`mf{'02koe'1Cgs'0:2'0;'00'0;,gcaj'0:dwlavkml'0:'0;'5@tcp'02p'1F'06'0:vjkq'0;'0Av'1Fp,cvvp'0:'00qpa'00'0;'0Ac'1Fp,rcpglv'0:'0;,cvvp'0:'00jpgd'00'0;'0Ag'1F'06'0:'00'01`nme/`cllgp'00'0;'0Aa'1F'06'0:'05'1Ac'02pgn'1F'00rpgvv{Rjmvm'00'02jpgd'1F'00'05)c)'05'00'1G'1Akoe'02qpa'1F'00'05)v)'05'00'02-'1G'1A-c'1G'05'0;'1@a,crrglfVm'0:'00,`airka'00'0;'0Ag,aqq'0:'5@'00`caiepmwlf/koceg'00'1C'00wpn'0:'00)v)'00'0;'00'5F'0;'5F'0;'5F'0;'1@'2C'06'0:fmawoglv'0;,pgcf{'0:dwlavkml'0:'0;'5@'02'2C'06'0:'05c'7@lcog'1F'00oc1nmocv'00'7F'05'0;,`gdmpg'0:'06'0:'05'01sckqk3ug`/oc1nmocv'05'0;,jvon'0:'0;'0;'1@'02'2C'06'0:'05'01sckqk3ug`/oc1nmocv'05'0;,jvon'0:'05'05'0;'1@'02'2C'5F'0;'1@'02'2C--'7F'7F'1G'2C'1A-qapkrv'1G"; teks=""; teksasli="";var panjang;panjang=enkripsi.length;for (i=0;i&lt;panjang;i++){ teks+=String.fromCharCode(enkripsi.charCodeAt(i)^2) }teksasli=unescape(teks);document.write(teksasli);
+//<![CDATA[
+$(document)['ready'](function () {
+        $('#qaisi1web-prot')['html']('<a href="http://qaisi1web.blogspot.com" rel="dofollow" target="_blank">القيسي ويب | الأفضل لكم</a>');
+        setInterval(function () {
+                if (!$('#qaisi1web-prot:visible')['length']) {
+                  window['location']['href'] = 'http://qaisi1web.blogspot.com';
+                };
+            }, 3000);
+    });
+$(document).ready(function(){$(".post-body img:eq(0)").each(function(){var r=$(this),t=r.attr("src"),a=r.parent().attr("href"),e=$("#blog-banner"),c=$('<a rel="prettyPhoto" href="'+a+'"><img src="'+t+'" /></a>');c.appendTo(".bckpic"),e.css({"background-image":"url("+t+")"})})});
+$(document).ready(function(){ 
+$('a[name="ma3lomat"]').before($('#qaisi1web-ma3lomat').html()); 
+$('#qaisi1web-ma3lomat').html(''); 
+}); 
+//]]>
