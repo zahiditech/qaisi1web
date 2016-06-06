@@ -8,7 +8,7 @@ BY : https://qaisi1web.blogspot.com/
 */
 /** Auto-readmore link script (for blogspot)
 (C)2012 by bloggeradsenseo right
-/web/20150326021621/http://bloggeradsenseo.blogspot.com **/
+/https://qaisi1web.blogspot.com/**/
 
 function removeHtmlTag(strx,chop){ 
 	if(strx.indexOf("<")!=-1)
