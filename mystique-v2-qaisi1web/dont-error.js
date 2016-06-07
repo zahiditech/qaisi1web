@@ -3,7 +3,7 @@
       // WOW
       new WOW({ offset: 100 }).init();
 $(document)['ready'](function () {
-        $('#qaisi1web-prot')['html']('<a href="http://qaisi1web.blogspot.com" rel="dofollow" target="_blank">القيسي ويب | الأفضل لكم</a>');
+        $('#qaisi1web-prot')['html']('<a href="http://qaisi1web.blogspot.com" rel="dofollow" target="_blank">تصميم : القيسي ويب</a>');
         setInterval(function () {
                 if (!$('#qaisi1web-prot:visible')['length']) {
                   window['location']['href'] = 'http://qaisi1web.blogspot.com';
