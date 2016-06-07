@@ -6,7 +6,7 @@
     var currentPageNo;
     var postLabel;
     pagecurrentg();
-  
+
     function looppagecurrentg(pageInfo) {
         var html = '';
         pageNumber = parseInt(numPages / 2);
@@ -19,69 +19,68 @@
         if (lastPageNo - 1 == pageInfo / perPage) lastPageNo = lastPageNo - 1;
         pageEnd = pageStart + numPages - 1;
         if (pageEnd > lastPageNo) pageEnd = lastPageNo;
-        html += "<li><a>صفحة " + currentPageNo + ' من ' + lastPageNo + "</a></li>";
+        html += "<span class='showpageOf'>صفحة " + currentPageNo + ' من ' + lastPageNo + "</span>";
         var prevNumber = parseInt(currentPageNo) - 1;
       
-        //Iccsi was here, doing magic
-        
+		//Iccsi was here, doing magic      
         if (currentPageNo > 1) {
-            if (currentPage == "page") {
-              html += '<li class="showpage firstpage"><a href="' + home_page + '">' + firstText + '</a></li>'
-            } else {
-              html += '<li class="displaypageNum firstpage"><a href="/search/label/' + postLabel + '?&max-results=' + perPage + '">' + firstText + '</a></li>'
-            }
-        }
-
-        if (currentPageNo > 2) {
+			if (currentPage == "page") {
+			  html += '<span class="showpage firstpage"><a href="' + home_page + '">' + firstText + '</a></span>'
+			} else {
+			  html += '<span class="displaypageNum firstpage"><a href="/search/label/' + postLabel + '?&max-results=' + perPage + '">' + firstText + '</a></span>'
+			}
+		}
+		
+		if (currentPageNo > 2) {
             if (currentPageNo == 3) { 
                 if (currentPage == "page") {
-                    html += '<li class="showpage"><a href="' + home_page + '">' + prevText + '</a></li>'
+                    html += '<span class="showpage"><a href="' + home_page + '">' + prevText + '</a></span>'
                 } else {
-                    html += '<li class="displaypageNum"><a href="/search/label/' + postLabel + '?&max-results=' + perPage + '">' + prevText + '</a></li>'
+                    html += '<span class="displaypageNum"><a href="/search/label/' + postLabel + '?&max-results=' + perPage + '">' + prevText + '</a></span>'
                 }
             } else {
                 if (currentPage == "page") {
-                    html += '<li class="displaypageNum"><a href="#" class="hvr-push" onclick="redirectpage(' + prevNumber + ');return false">' + prevText + '</a></li>'
+                    html += '<span class="displaypageNum"><a href="#" onclick="redirectpage(' + prevNumber + ');return false">' + prevText + '</a></span>'
                 } else {
-                    html += '<li class="displaypageNum"><a href="#" class="hvr-push" onclick="redirectlabel(' + prevNumber + ');return false">' + prevText + '</a></li>'
+                    html += '<span class="displaypageNum"><a href="#" onclick="redirectlabel(' + prevNumber + ');return false">' + prevText + '</a></span>'
                 }
             }
         }
         if (pageStart > 1) {
             if (currentPage == "page") {
-                html += '<li class="displaypageNum"><a href="' + home_page + '">1</a></li>'
+                html += '<span class="displaypageNum"><a href="' + home_page + '">1</a></span>'
             } else {
-                html += '<li class="displaypageNum"><a href="/search/label/' + postLabel + '?&max-results=' + perPage + '">1</a></li>'
+                html += '<span class="displaypageNum"><a href="/search/label/' + postLabel + '?&max-results=' + perPage + '">1</a></span>'
             }
         }
         if (pageStart > 2) {
-            html += '<li><a> ... </li></a>'
+            html += ''
         }
         for (var jj = pageStart; jj <= pageEnd; jj++) {
             if (currentPageNo == jj) {
-                html += '<li class="active hvr-push"><a href="#">' + jj + '</a></li>'
+                html += '<span class="pagecurrent">' + jj + '</span>'
             } else if (jj == 1) {
                 if (currentPage == "page") {
-                    html += '<li class="displaypageNum"><a href="' + home_page + '">1</a></li>'
+                    html += '<span class="displaypageNum"><a href="' + home_page + '">1</a></span>'
                 } else {
-                    html += '<li class="displaypageNum"><a href="/search/label/' + postLabel + '?&max-results=' + perPage + '">1</a></li>'
+                    html += '<span class="displaypageNum"><a href="/search/label/' + postLabel + '?&max-results=' + perPage + '">1</a></span>'
                 }
             } else {
                 if (currentPage == "page") {
-                    html += '<li class="displaypageNum"><a href="#" class="hvr-push" onclick="redirectpage(' + jj + ');return false">' + jj + '</a></li>'
+                    html += '<span class="displaypageNum"><a href="#" onclick="redirectpage(' + jj + ');return false">' + jj + '</a></span>'
                 } else {
-                    html += '<li class="displaypageNum"><a href="#" class="hvr-push" onclick="redirectlabel(' + jj + ');return false">' + jj + '</a></li>'
+                    html += '<span class="displaypageNum"><a href="#" onclick="redirectlabel(' + jj + ');return false">' + jj + '</a></span>'
                 }
             }
         }
         if (pageEnd < lastPageNo - 1) {
-            html += '<li><a>...</li></a>'
+            html += ''
         }
         if (pageEnd < lastPageNo) {
             if (currentPage == "page") {
-                html += '<li class="displaypageNum"><a href="#" class="hvr-push" onclick="redirectpage(' + lastPageNo + ');return false">' + lastPageNo + '</a></li>'
+                html += '<span class="displaypageNum"><a href="#" onclick="redirectpage(' + lastPageNo + ');return false">' + lastPageNo + '</a></span>'
             } else {
-                html += '<li class="displaypageNum"><a href="#" class="hvr-push" onclick="redirectlabel(' + lastPageNo + ');return false">' + lastPageNo + '</a></li>'
+                html += '<span class="displaypageNum"><a href="#" onclick="redirectlabel(' + lastPageNo + ');return false">' + lastPageNo + '</a></span>'
             }
         }
 
@@ -89,19 +88,19 @@
         var nextnumber = parseInt(currentPageNo) + 1;
         if (currentPageNo < (lastPageNo - 1)) {
             if (currentPage == "page") {
-                html += '<li class="displaypageNum"><a href="#" class="hvr-push" onclick="redirectpage(' + nextnumber + ');return false">' + nextText + '</a></li>'
+                html += '<span class="displaypageNum"><a href="#" onclick="redirectpage(' + nextnumber + ');return false">' + nextText + '</a></span>'
             } else {
-                html += '<li class="displaypageNum"><a href="#" class="hvr-push" onclick="redirectlabel(' + nextnumber + ');return false">' + nextText + '</a></li>'
+                html += '<span class="displaypageNum"><a href="#" onclick="redirectlabel(' + nextnumber + ');return false">' + nextText + '</a></span>'
             }
-        }
-        
-        if (currentPageNo < lastPageNo) {
-            //Iccsi was here, doing magic
-            if (currentPage == "page") {
-              html += '<li class="displaypageNum lastpage"><a href="#" class="hvr-push" onclick="redirectpage(' + lastPageNo + ');return false">' + lastText + '</a></li>'
-            } else {
-              html += '<li class="displaypageNum lastpage"><a href="#" class="hvr-push" onclick="redirectlabel(' + lastPageNo + ');return false">' + lastText + '</a></li>'
-            }
+		}
+		
+		if (currentPageNo < lastPageNo) {
+			//Iccsi was here, doing magic
+			if (currentPage == "page") {
+			  html += '<span class="displaypageNum lastpage"><a href="#" onclick="redirectpage(' + lastPageNo + ');return false">' + lastText + '</a></span>'
+			} else {
+			  html += '<span class="displaypageNum lastpage"><a href="#" onclick="redirectlabel(' + lastPageNo + ');return false">' + lastText + '</a></span>'
+			}
         }
 
         var pageArea = document.getElementsByName("pageArea");
@@ -113,11 +112,7 @@
             html = ''
         }
         if (blogPager) {
-            if(advancedPager=="active" && devWidth > 768){
-                blogPager.innerHTML = html
-            }else{
-              document.write('<style>.pagination{display:block}</style>')
-            }
+            blogPager.innerHTML = html
         }
     }
 
