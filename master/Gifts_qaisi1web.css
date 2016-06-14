@@ -1,0 +1,73 @@
+/*
+ *url:https://qaisi1web.blogspot.com/
+ *By: qaisi web - assad alqaisi
+ */
+.Gifts_qaisi1web {
+    background: url(https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/10/1446000829adthing.png) 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px 20px;
+    font-family: 'Mahdi-font';
+}
+.Gifts_qaisi1web_header {
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border:1px solid #d9534f;
+    border-radius: 12px!important;
+    padding: 5px 20px;
+}
+.Gifts_qaisi1web_ArticleBox {
+    position: relative;
+    padding: 10px 20px 20px;
+}
+.Gifts_qaisi1web_content {
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+.Gifts_qaisi1web_icon.glyphicon.glyphicon-gift {
+    color: #d9534f;
+    margin-right: 8px;
+}
+.Gifts_qaisi1web_tagline {
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+p.Gifts_qaisi1web_creative {
+    margin-bottom: 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,.6);
+}
+.Gifts_qaisi1web_cta {
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+}
+.btn.btn-gifts {
+    display: inline-block;
+    background-color: #fe4e3f;
+    font-weight: 400;
+    padding-top: .75em;
+    padding-bottom: .75em;
+    border-radius: 2px!important;
+    margin: 0;
+    color: #FFF;
+    letter-spacing: 1px;
+}
+.Gifts_qaisi1web_cta i.glyphicon.glyphicon-gift {
+    margin-right: 95px;
+}
+.popover {
+    color: #000;
+    text-align: center;
+    font-family: 'Mahdi-font';
+}
+.popover-title{    
+    background-color: #dddfe2;
+    border-bottom: 1px solid #aaa;
+    border-radius: 5px 5px 0 0!important;
+    font-family: 'Mahdi-font'!important;
+    }
