@@ -1,4 +1,4 @@
-.row {margin: -5px -7px -20px -7px;}.post {box-shadow: 0 0 0 0!important;}
+.post {box-shadow: 0 0 0 0!important;}
 .hello-blog h4 { position: relative;    font-family: ge_ss_tvbold!important; overflow: hidden; margin: 0 0 20px; font-size: 120%; font-weight: 700; padding: 0 8px; text-align: center; text-transform: uppercase; transition: all 0.5s ease-out; }
 .hello-blog h4:before { margin-right: -50%; text-align: right} .hello-blog h4:before, .hello-blog h4:after { position: absolute; top: 51%; overflow: hidden; width: 48%; height: 3px; content: '\a0'; background-color: #7F8184; }.hello-blog h4:after { margin: 0 18px; }#content { background-color: transparent; box-shadow: inherit; } .contact-bg { width: auto!important;background: url(http://www.alimentinc.com/wp-content/uploads/2016/05/ContactUs.jpg) no-repeat fixed center right /cover #ffffff;margin: 0 0 40px 0;padding: 2%!important;display: block!important;border-top-right-radius: 4px!important;border-top-left-radius: 4px!important;font-family: Electrolize,'ge_ss_tvbold';background-size: 85%;background-repeat: no-repeat;
 height: 240px;background-position: top;} h1.cheading { text-align: center!important; margin-top: 69px!important; font-family: 'Noto Sans Kufi Arabic', sans-serif; font-weight: bold; color: #FFFFFF!important;background: linear-gradient(to right, rgba(76, 85, 95, 0.23) 0%,rgba(76, 85, 95, 0.41) 1%,rgba(76, 85, 95, 0.47) 50%,rgba(76, 85, 95, 0.41) 100%);
@@ -41,5 +41,5 @@ margin-bottom:10px;
 }
 .topwrapper ,#Header-wrapper ,#comments ,#sidebar-wrap {display:none;}
 [class*="col-"] {width:100%;}
-.wrapper{background: #fff;margin: 60px 160px 60px 0px;border-radius: 10px!important;box-shadow: 0px 1px 11px 1px #4c555f;}
+.wrapper{background: #fff;border-radius: 10px!important;box-shadow: 0px 1px 11px 1px #4c555f;}
 .post-body img{margin:auto;}#header-wrap, #comment_block, .items-qaisi1web, #footer-widgetfix, .pic-num, p.copyright {display: none;}
